@@ -26,3 +26,9 @@ A clean, fully responsive fixed navigation bar built with **HTML**, **CSS**, and
 ## Live Demo
 
 https://sct-responsivelandingpage.netlify.app/
+
+---
+
+## Author
+
+Created by Shravya K V
