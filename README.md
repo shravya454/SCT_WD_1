@@ -19,7 +19,7 @@ The navigation bar remains visible on all pages and includes smooth hover animat
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript
 
 ---
 
