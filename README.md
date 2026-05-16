@@ -1,4 +1,4 @@
-# Interactive Navigation Menu
+# Responsive Landing Page
 
 A responsive and interactive fixed navigation menu built using **HTML**, **CSS**, and **JavaScript**.
 
