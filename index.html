@@ -1,108 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shravya — Interactive Nav</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shravya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!--
-       NAVIGATION
-   -->
-  <nav id="navbar">
-    <div class="nav-inner">
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
 
-      <a href="#home" class="nav-logo">
-        <span class="logo-mark">✦</span>
-        <span class="logo-text">Shravya</span>
-      </a>
+            <a href="#home" class="logo">
+                <span class="logo-icon">✦</span>
+                Shravya
+            </a>
 
-      <ul class="nav-links">
-        <li><a href="#home"    class="nav-link" data-label="Home">Home</a></li>
-        <li><a href="#work"    class="nav-link" data-label="Work">Work</a></li>
-        <li><a href="#about"   class="nav-link" data-label="About">About</a></li>
-        <li><a href="#journal" class="nav-link" data-label="Journal">Journal</a></li>
-        <li><a href="#contact" class="nav-link cta" data-label="Contact">Contact</a></li>
-      </ul>
+            <!-- nav links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="#contact" class="contact-btn">Contact</a></li>
+            </ul>
 
-      <!-- Mobile hamburger -->
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+            <!-- hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-    <!-- Mobile drawer -->
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="#home"    class="mob-link">Home</a></li>
-        <li><a href="#work"    class="mob-link">Work</a></li>
-        <li><a href="#about"   class="mob-link">About</a></li>
-        <li><a href="#journal" class="mob-link">Journal</a></li>
-        <li><a href="#contact" class="mob-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+        </div>
 
-  <!-- 
-       PAGES / SECTIONS
-   -->
+        <!-- mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <section id="home" class="section hero-section">
-    <div class="section-content">
-      <p class="eyebrow">Scroll to see the nav transform</p>
-      <h1>Design that<br><em>breathes.</em></h1>
-      <p class="body-copy">The navigation above is transparent at the top. Scroll down and watch it solidify, blur, and shift — then hover each link for micro-interactions.</p>
-      <a href="#work" class="btn-outline">Explore ↓</a>
-    </div>
-    <div class="hero-deco" aria-hidden="true">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="grid-lines"></div>
-    </div>
-  </section>
+    <!-- scroll progress bar at the top -->
+    <div id="progress-bar"></div>
 
-  <section id="work" class="section alt-section">
-    <div class="section-content">
-      <p class="eyebrow">Selected work</p>
-      <h2>Crafted with<br>intention.</h2>
-      <div class="card-grid">
-        <div class="card"><span class="card-num">01</span><p>Brand Identity</p></div>
-        <div class="card"><span class="card-num">02</span><p>Web Experiences</p></div>
-        <div class="card"><span class="card-num">03</span><p>Motion Design</p></div>
-      </div>
-    </div>
-  </section>
+    <!-- HOME SECTION -->
+    <section id="home" class="section hero">
+        <div class="section-content">
+            <p class="tag">Scroll to see the nav change</p>
+            <h1>Design that<br><em>breathes.</em></h1>
+            <p class="desc">
+                The navbar above starts transparent. As you scroll down it changes style — 
+                hover the links too for some nice effects.
+            </p>
+            <a href="#work" class="btn">Explore ↓</a>
+        </div>
 
-  <section id="about" class="section">
-    <div class="section-content">
-      <p class="eyebrow">About</p>
-      <h2>A studio obsessed<br>with the details.</h2>
-      <p class="body-copy">We believe great design lives at the intersection of restraint and surprise. Every pixel is purposeful. Every transition, earned.</p>
-    </div>
-  </section>
+        <!-- background decoration stuff -->
+        <div class="hero-bg">
+            <div class="circle c1"></div>
+            <div class="circle c2"></div>
+            <div class="grid"></div>
+        </div>
+    </section>
 
-  <section id="journal" class="section alt-section">
-    <div class="section-content">
-      <p class="eyebrow">Journal</p>
-      <h2>Thoughts on craft,<br>process, and light.</h2>
-      <ul class="journal-list">
-        <li><span class="jdate">May 2026</span> On negative space and silence</li>
-        <li><span class="jdate">Apr 2026</span> Why brutalism endures</li>
-        <li><span class="jdate">Mar 2026</span> Color theory for the colorblind</li>
-      </ul>
-    </div>
-  </section>
+    <!-- WORK SECTION -->
+    <section id="work" class="section alt">
+        <div class="section-content">
+            <p class="tag">Selected work</p>
+            <h2>Crafted with intention.</h2>
+            <div class="cards">
+                <div class="card">
+                    <span class="num">01</span>
+                    <p>Brand Identity</p>
+                </div>
+                <div class="card">
+                    <span class="num">02</span>
+                    <p>Web Experiences</p>
+                </div>
+                <div class="card">
+                    <span class="num">03</span>
+                    <p>Motion Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact" class="section">
-    <div class="section-content">
-      <p class="eyebrow">Contact</p>
-      <h2>Let's make<br>something real.</h2>
-      <p class="body-copy">hello@shravya.studio</p>
-    </div>
-  </section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="section-content">
+            <p class="tag">About</p>
+            <h2>A studio obsessed<br>with the details.</h2>
+            <p class="desc">
+                We believe great design lives at the intersection of restraint and surprise. 
+                Every pixel is purposeful. Every transition, earned.
+            </p>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- JOURNAL SECTION -->
+    <section id="journal" class="section alt">
+        <div class="section-content">
+            <p class="tag">Journal</p>
+            <h2>Thoughts on craft,<br>process, and light.</h2>
+            <ul class="journal-list">
+                <li>
+                    <span class="date">May 2026</span>
+                    On negative space and silence
+                </li>
+                <li>
+                    <span class="date">Apr 2026</span>
+                    Why brutalism endures
+                </li>
+                <li>
+                    <span class="date">Mar 2026</span>
+                    Color theory for the colorblind
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            <p class="tag">Contact</p>
+            <h2>Let's make<br>something real.</h2>
+<p class="desc">hello@shravya.studio</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
