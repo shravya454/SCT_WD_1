@@ -1,8 +1,8 @@
 # Responsive Landing Page
 
-A responsive and interactive fixed navigation menu built using **HTML**, **CSS**, and **JavaScript**.
+## Interactive Navigation Menu
 
-The navigation bar remains visible on all pages and includes smooth hover animations and dynamic style changes when scrolling.
+A clean, fully responsive fixed navigation bar built with **HTML**, **CSS**, and **JavaScript**
 
 ---
 
